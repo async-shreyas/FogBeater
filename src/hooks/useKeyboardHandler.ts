@@ -1,4 +1,5 @@
 import { useEffect, useCallback } from 'react'
+import { GameState } from '~/types/game'
 
 interface UseKeyboardHandlerProps {
   gameState: string
@@ -18,7 +19,7 @@ interface UseKeyboardHandlerProps {
   setCorrectResponses: (count: number | ((prev: number) => number)) => void
   setCurrentWord: (word: string | ((prev: string) => string)) => void
   setFeedback: (feedback: string) => void
-  setGameState: (state: string) => void
+  setGameState: (state: GameState) => void
   generateSequence: () => void
   calmingWords: string[]
 }
