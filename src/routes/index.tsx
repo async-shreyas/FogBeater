@@ -6,7 +6,7 @@ export const Route = createFileRoute('/')({
 
 function Home() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <div className="max-w-4xl mx-auto px-4 py-8 bg-black">
       <div className="text-center">
         <h1 className="text-4xl font-light text-gray-800 mb-6">
           Welcome to TanStack Start
